@@ -35,6 +35,9 @@
                                     <constraint firstAttribute="width" constant="162" id="wpM-hD-odi"/>
                                 </constraints>
                                 <state key="normal" image="img_switch_off"/>
+                                <connections>
+                                    <action selector="btnSwitchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbJ-fg-0TA"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_knob_base" translatesAutoresizingMaskIntoConstraints="NO" id="2Er-av-i1b">
                                 <rect key="frame" x="99" y="411" width="176" height="176"/>
@@ -63,6 +66,11 @@
                             <constraint firstItem="2Er-av-i1b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yci-Ok-YjJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnSwitch" destination="vbP-ga-w9n" id="Ban-eZ-DCx"/>
+                        <outlet property="imgKnob" destination="laN-u2-Ykb" id="JPJ-Or-c4P"/>
+                        <outlet property="imgKnobBase" destination="2Er-av-i1b" id="SEd-zo-QJv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
